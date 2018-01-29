@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.pharogrammer.fedora.courtcounter.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team A"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="casual"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_team_A_score"
+                android:text="0"
+                android:fontFamily="cursive"
+                android:textSize="80sp"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_3pts_A"
+                android:text="+3 Points"
+                android:fontFamily="casual"
+                android:textStyle="bold"
+                android:background="@drawable/team_a_buttons"
+                android:layout_margin="8dp"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_2pts_A"
+                android:text="+2 Points"
+                android:fontFamily="casual"
+                android:textStyle="bold"
+                android:background="@drawable/team_a_buttons"
+                android:layout_margin="8dp"
+                />
+            <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_free_throw_A"
+            android:text="Free Throw"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:background="@drawable/team_a_buttons"
+            android:layout_margin="8dp"
+            />
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="25dp"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team B"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="casual"
+                android:textColor="@android:color/holo_red_light"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_team_B_score"
+                android:text="0"
+                android:fontFamily="cursive"
+                android:textSize="80sp"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_3pts_B"
+                android:text="+3 Points"
+                android:fontFamily="casual"
+                android:textStyle="bold"
+                android:background="@drawable/team_b_buttons"
+                android:layout_margin="8dp"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_2pts_B"
+                android:text="+2 Points"
+                android:fontFamily="casual"
+                android:textStyle="bold"
+                android:background="@drawable/team_b_buttons"
+                android:layout_margin="8dp"
+                />
+            <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_free_throw_B"
+            android:text="Free Throw"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:background="@drawable/team_b_buttons"
+            android:layout_margin="8dp"
+            />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_reset"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="Reset"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorResetButton"
+        />
+
+</LinearLayout>
